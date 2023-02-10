@@ -1,4 +1,4 @@
-#include "framework.h"
+#include "stdafx.h"
 #include "util.h"
 
 void GetWidthHeight(HWND hwnd, int* width, int* height)

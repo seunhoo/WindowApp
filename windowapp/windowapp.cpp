@@ -1,9 +1,5 @@
 ﻿// windowapp.cpp : 애플리케이션에 대한 진입점을 정의합니다.
-#include "framework.h"
-#include "windowapp.h"
-
-// custom header
-#include "util.h"
+#include "stdafx.h"
 
 #define MAX_LOADSTRING 100
 
@@ -129,6 +125,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             TranslateMessage(&msg);
             DispatchMessage(&msg);
         }
+        else
+        {
+
+        }
     }
 
     return (int) msg.wParam;
@@ -151,21 +151,34 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
     {
     case WM_CREATE:
         {
-            // 버튼 컨트롤 생성
-            HWND hwndButton = CreateWindowW(L"BUTTON", L"OK", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, 100, 50, hwnd, (HMENU)1, NULL, NULL);
+            SetWindowPos(hwnd, NULL, 0, 0, DEFAULT_X, DEFAULT_Y, SWP_NOZORDER | SWP_NOMOVE);
+
             int iWidth = 0, iHeight = 0;
             GetWidthHeight(hwnd, &iWidth, &iHeight);
-            SetWindowPos(hwndButton, NULL, (iWidth - 100) / 2, (iHeight - 50) / 2, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+            
+            // 버튼 컨트롤 생성
+            HWND hwndButton = CreateWindowW(L"BUTTON", L"클릭!", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BUTTON, NULL, NULL);
+            SetWindowPos(hwndButton, NULL, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+
+            // textbox 컨트롤 생성
+            HWND hTextBox = CreateWindowEx(0, _T("EDIT"), _T(""), WS_CHILD | WS_VISIBLE | WS_BORDER, 0, 0, TEXTBOX_X, TEXTBOX_Y, hwnd, (HMENU)ID_TEXTBOX, GetModuleHandle(NULL), NULL);
+            SetWindowPos(hTextBox, NULL, (iWidth - TEXTBOX_X) / 2 , (iHeight - TEXTBOX_Y) / 2 - 50, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+            //SendMessage(hTextBox, WM_SETFONT, (WPARAM)GetStockObject(DEFAULT_GUI_FONT), 0);
+
         }
         break;
     case WM_COMMAND:
         {
             int wmId = LOWORD(wParam);
             // 메뉴 선택을 구문 분석합니다:
+    
             switch (wmId)
             {
-            case 1:
+            case ID_BUTTON:
                 MessageBoxW(hwnd, L"버튼 클릭", L"메시지", MB_OK);
+                break;
+            case ID_TEXTBOX:
+
                 break;
             case IDM_ABOUT:
                 DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hwnd, About);

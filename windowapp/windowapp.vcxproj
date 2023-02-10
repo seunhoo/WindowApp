@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -128,12 +129,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="object.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="windowapp.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="windowapp.cpp" />
   </ItemGroup>
