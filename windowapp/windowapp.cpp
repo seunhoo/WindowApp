@@ -10,16 +10,14 @@ HBRUSH g_hbrBackground = CreateSolidBrush(RGB(255, 255, 0));
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
 WCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입니다.
 WCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
+HWND hwndButton;
+HWND hTextBox;
 
 // 이 코드 모듈에 포함된 함수의 선언을 전달합니다:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
-
-
-HWND hwndButton;
-HWND hTextBox;
 
 //
 //  함수: MyRegisterClass()
@@ -139,7 +137,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 }
 
 
-//  
+//
 //  함수: WndProc(HWND, UINT, WPARAM, LPARAM)
 //
 //  용도: 주 창의 메시지를 처리합니다.
@@ -151,7 +149,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 //
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
-
     switch (message)
     {
     case WM_CREATE:
@@ -162,7 +159,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
             GetWidthHeight(hwnd, &iWidth, &iHeight);
             
             // 버튼 컨트롤 생성
-            hwndButton = CreateWindowW(L"BUTTON", L"추가 됨!", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BUTTON, NULL, NULL);
+            hwndButton = CreateWindowW(L"BUTTON", L"클릭!", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BUTTON, NULL, NULL);
             SetWindowPos(hwndButton, NULL, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
 
             // textbox 컨트롤 생성
@@ -180,13 +177,14 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
             switch (wmId)
             {
             case ID_BUTTON:
-			{
+            {
                 int length = GetWindowTextLengthW(hTextBox) + 1;
-			    wchar_t* buffer = new wchar_t[length];
-	    		GetWindowTextW(hTextBox, buffer, length);
-		    	MessageBoxW(hwnd, buffer, L"너가 입력한 메세지", MB_OK);
-			    break;
-			}
+                wchar_t* buffer = new wchar_t[length];
+                GetWindowTextW(hTextBox, buffer, length);
+                MessageBoxW(NULL, buffer, L"Entered text", MB_OK);
+                delete[] buffer;
+            }
+                break;
             case ID_TEXTBOX:
 
                 break;
