@@ -17,6 +17,10 @@ BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
 
+
+HWND hwndButton;
+HWND hTextBox;
+
 //
 //  함수: MyRegisterClass()
 //
@@ -135,7 +139,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 }
 
 
-//
+//  
 //  함수: WndProc(HWND, UINT, WPARAM, LPARAM)
 //
 //  용도: 주 창의 메시지를 처리합니다.
@@ -147,6 +151,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 //
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
+
     switch (message)
     {
     case WM_CREATE:
@@ -157,11 +162,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
             GetWidthHeight(hwnd, &iWidth, &iHeight);
             
             // 버튼 컨트롤 생성
-            HWND hwndButton = CreateWindowW(L"BUTTON", L"클릭!", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BUTTON, NULL, NULL);
+            hwndButton = CreateWindowW(L"BUTTON", L"추가 됨!", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BUTTON, NULL, NULL);
             SetWindowPos(hwndButton, NULL, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
 
             // textbox 컨트롤 생성
-            HWND hTextBox = CreateWindowEx(0, _T("EDIT"), _T(""), WS_CHILD | WS_VISIBLE | WS_BORDER, 0, 0, TEXTBOX_X, TEXTBOX_Y, hwnd, (HMENU)ID_TEXTBOX, GetModuleHandle(NULL), NULL);
+            hTextBox = CreateWindowEx(0, _T("EDIT"), _T(""), WS_CHILD | WS_VISIBLE | WS_BORDER, 0, 0, TEXTBOX_X, TEXTBOX_Y, hwnd, (HMENU)ID_TEXTBOX, GetModuleHandle(NULL), NULL);
             SetWindowPos(hTextBox, NULL, (iWidth - TEXTBOX_X) / 2 , (iHeight - TEXTBOX_Y) / 2 - 50, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
             //SendMessage(hTextBox, WM_SETFONT, (WPARAM)GetStockObject(DEFAULT_GUI_FONT), 0);
 
@@ -175,8 +180,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
             switch (wmId)
             {
             case ID_BUTTON:
-                MessageBoxW(hwnd, L"버튼 클릭", L"메시지", MB_OK);
-                break;
+			{
+                int length = GetWindowTextLengthW(hTextBox) + 1;
+			    wchar_t* buffer = new wchar_t[length];
+	    		GetWindowTextW(hTextBox, buffer, length);
+		    	MessageBoxW(hwnd, buffer, L"너가 입력한 메세지", MB_OK);
+			    break;
+			}
             case ID_TEXTBOX:
 
                 break;

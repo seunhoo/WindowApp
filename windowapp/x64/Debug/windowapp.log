@@ -1,6 +1,2 @@
-﻿  object.cpp
-  stdafx.cpp
-  util.cpp
-  windowapp.cpp
-  코드를 생성하고 있습니다...
-  windowapp.vcxproj -> C:\Users\USER\Desktop\vstudio\windowapp\WindowsApp\x64\Debug\windowapp.exe
+﻿  windowapp.cpp
+  windowapp.vcxproj -> C:\Users\USER\Desktop\vstudio\windowapp\windowapp\x64\Debug\windowapp.exe
