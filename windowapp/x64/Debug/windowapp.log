@@ -1,2 +1,3 @@
 ﻿  windowapp.cpp
+C:\Users\USER\Desktop\vstudio\windowapp\windowapp\windowapp\windowapp.cpp(39,38): warning C4302: '형식 캐스트': 'LPWSTR'에서 'WORD'(으)로 잘립니다.
   windowapp.vcxproj -> C:\Users\USER\Desktop\vstudio\windowapp\windowapp\x64\Debug\windowapp.exe

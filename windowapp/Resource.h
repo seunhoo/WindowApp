@@ -4,8 +4,9 @@
 
 #define IDS_APP_TITLE			103
 
-#define ID_BUTTON				10
-#define ID_TEXTBOX				11
+#define ID_TEXTBOX				9
+#define ID_TEXT_BUTTON				10
+#define ID_BACK_BUTTON				11
 
 #define IDR_MAINFRAME			128
 #define IDD_WINDOWAPP_DIALOG	102
