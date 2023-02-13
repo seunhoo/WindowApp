@@ -1,8 +1,476 @@
-﻿  windowapp.cpp
-C:\Users\USER\Desktop\vstudio\windowapp\windowapp\windowapp\windowapp.cpp(39,38): warning C4302: '형식 캐스트': 'LPWSTR'에서 'WORD'(으)로 잘립니다.
-  코드를 생성하고 있습니다.
-  2 of 75 functions ( 2.7%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  코드를 생성했습니다.
-  windowapp.vcxproj -> C:\Users\USER\Desktop\vstudio\windowapp\windowapp\x64\Release\windowapp.exe
+﻿  object.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,16): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,54): error C2440: '초기화 중': 'const char [37]'에서 'int'(으)로 변환할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,15): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,1): error C2146: 구문 오류: ';'이(가) 'IImageBytes' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,15): error C2059: 구문 오류: 'public'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,13): error C3646: 'id': 알 수 없는 재정의 지정자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,15): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(397,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(407,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(417,20): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(455,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(456,33): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(457,31): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(465,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(483,10): error C2535: 'Gdiplus::Image::Image(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(396): message : 'Gdiplus::Image::Image' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(519,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(529,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773,17): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(829,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(828,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(836,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(835,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(845,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(844,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(870,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(938,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,32): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,25): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,34): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,52): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,42): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,55): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,45): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1168,39): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1256,59): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1259,41): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1262,37): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1274,40): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,56): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,45): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,31): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,59): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,48): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,25): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,5): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2255,24): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,30): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,61): error C2065: 'metafile': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,48): error C2275: 'Gdiplus::GpMetafile': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusPath.h(145,35): error C2061: 구문 오류: 식별자 'byte'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,23): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,32): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(198,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(215,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(234,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,16): error C2761: 'GetMetafileHeader': 멤버를 재선언할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,28): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,9): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(49,8): error C7550: 'Gdiplus::Image::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,17): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(51,8): error C2275: 'BOOL': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(52,5): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+  stdafx.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,16): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,54): error C2440: '초기화 중': 'const char [37]'에서 'int'(으)로 변환할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,15): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,1): error C2146: 구문 오류: ';'이(가) 'IImageBytes' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,15): error C2059: 구문 오류: 'public'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,13): error C3646: 'id': 알 수 없는 재정의 지정자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,15): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(397,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(407,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(417,20): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(455,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(456,33): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(457,31): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(465,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(483,10): error C2535: 'Gdiplus::Image::Image(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(396): message : 'Gdiplus::Image::Image' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(519,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(529,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773,17): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(829,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(828,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(836,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(835,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(845,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(844,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(870,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(938,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,32): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,25): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,34): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,52): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,42): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,55): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,45): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1168,39): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1256,59): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1259,41): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1262,37): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1274,40): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,56): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,45): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,31): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,59): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,48): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,25): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,5): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2255,24): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,30): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,61): error C2065: 'metafile': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,48): error C2275: 'Gdiplus::GpMetafile': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusPath.h(145,35): error C2061: 구문 오류: 식별자 'byte'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,23): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,32): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(198,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(215,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(234,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,16): error C2761: 'GetMetafileHeader': 멤버를 재선언할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,28): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,9): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(49,8): error C7550: 'Gdiplus::Image::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,17): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(51,8): error C2275: 'BOOL': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(52,5): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+  util.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,16): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,54): error C2440: '초기화 중': 'const char [37]'에서 'int'(으)로 변환할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,15): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,1): error C2146: 구문 오류: ';'이(가) 'IImageBytes' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,15): error C2059: 구문 오류: 'public'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,13): error C3646: 'id': 알 수 없는 재정의 지정자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,15): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(397,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(407,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(417,20): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(455,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(456,33): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(457,31): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(465,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(483,10): error C2535: 'Gdiplus::Image::Image(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(396): message : 'Gdiplus::Image::Image' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(519,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(529,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773,17): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(829,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(828,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(836,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(835,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(845,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(844,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(870,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(938,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,32): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,25): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,34): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,52): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,42): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,55): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,45): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1168,39): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1256,59): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1259,41): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1262,37): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1274,40): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,56): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,45): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,31): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,59): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,48): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,25): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,5): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2255,24): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,30): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,61): error C2065: 'metafile': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,48): error C2275: 'Gdiplus::GpMetafile': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusPath.h(145,35): error C2061: 구문 오류: 식별자 'byte'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,23): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,32): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(198,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(215,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(234,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,16): error C2761: 'GetMetafileHeader': 멤버를 재선언할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,28): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,9): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(49,8): error C7550: 'Gdiplus::Image::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,17): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(51,8): error C2275: 'BOOL': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(52,5): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
+  windowapp.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,16): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,54): error C2440: '초기화 중': 'const char [37]'에서 'int'(으)로 변환할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(84,15): message : 이 변환이 가능한 컨텍스트가 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,1): error C2146: 구문 오류: ';'이(가) 'IImageBytes' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(85,15): error C2059: 구문 오류: 'public'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(86,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,13): error C3646: 'id': 알 수 없는 재정의 지정자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusImaging.h(291,15): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(397,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(407,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(417,20): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(455,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(456,33): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(457,31): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(465,34): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(483,10): error C2535: 'Gdiplus::Image::Image(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(396): message : 'Gdiplus::Image::Image' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(519,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(529,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773,17): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(829,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(828,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(836,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(835,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(845,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(844,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(870,12): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(938,13): error C2535: 'Gdiplus::Metafile::Metafile(void)': 멤버 함수를 이미 정의했거나 선언했습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusHeaders.h(773): message : 'Gdiplus::Metafile::Metafile' 선언을 참조하십시오.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,32): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,25): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,34): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,52): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1145,42): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,55): error C2065: 'image': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1151,45): error C2275: 'Gdiplus::GpImage': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1168,39): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1256,59): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1259,41): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1262,37): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1274,40): error C2061: 구문 오류: 식별자 'PROPID'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,35): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,28): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,37): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,56): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1298,45): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,31): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,59): error C2065: 'bitmap': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(1304,48): error C2275: 'Gdiplus::GpBitmap': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2235,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,25): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2236,5): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2255,24): error C2061: 구문 오류: 식별자 'IStream'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,38): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,30): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,40): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,61): error C2065: 'metafile': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2275,48): error C2275: 'Gdiplus::GpMetafile': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2322,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2323,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,13): warning C4229: 오래된 구문을 사용했습니다. 데이터의 한정자가 무시됩니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,5): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2333,25): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,5): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusFlat.h(2334,25): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusPath.h(145,35): error C2061: 구문 오류: 식별자 'byte'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,23): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(80,32): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(81,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(198,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(199,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(200,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(204,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(215,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(216,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(217,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(223,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(234,11): error C7550: 'Gdiplus::Metafile::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(235,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,8): error C2275: 'HDC': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(236,28): error C2146: 구문 오류: ')'이(가) 'referenceHdc' 식별자 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(242,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,16): error C2761: 'GetMetafileHeader': 멤버를 재선언할 수 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(284,28): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,28): error C2065: 'header': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(285,9): error C2275: 'Gdiplus::MetafileHeader': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusMetafile.h(287,1): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(49,8): error C7550: 'Gdiplus::Image::{ctor}': 이 컨텍스트의 정규화된 이름이 형식이 아니라 생성자의 이름을 지정합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,8): error C2065: 'IStream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(50,17): error C2065: 'stream': 선언되지 않은 식별자입니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(51,8): error C2275: 'BOOL': 형식 대신 식이 필요합니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\GdiplusBitmap.h(52,5): fatal error C1003: 오류 수가 100개를 초과했습니다. 컴파일을 중지합니다.
