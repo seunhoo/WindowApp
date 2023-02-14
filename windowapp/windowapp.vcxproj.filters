@@ -66,8 +66,6 @@
     <Image Include="windowapp.ico">
       <Filter>리소스 파일</Filter>
     </Image>
-    <Image Include="..\image\image.png">
-      <Filter>Image</Filter>
-    </Image>
+    <Image Include="..\image\image.png" />
   </ItemGroup>
 </Project>

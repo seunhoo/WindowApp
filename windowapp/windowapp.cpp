@@ -97,6 +97,12 @@ INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 	return (INT_PTR)FALSE;
 }
 
+void Initialize()
+{
+	GdiplusStartupInput gdiplusStartupInput;
+	ULONG_PTR gdiplusToken;
+	GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);
+}
 
 int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	_In_opt_ HINSTANCE hPrevInstance,
@@ -139,13 +145,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	}
 
 	return (int)msg.wParam;
-}
-
-void Initialize()
-{
-	GdiplusStartupInput gdiplusStartupInput;
-	ULONG_PTR gdiplusToken;
-	GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);
 }
 
 //
@@ -194,6 +193,9 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		hwndBackButton = CreateWindowW(L"BUTTON", L"이미지출력", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_IMAGE_BUTTON, NULL, NULL);
 		SetWindowPos(hwndBackButton, NULL, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2 + 120, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
 
+		// 이미지 컨트롤 생성 ?
+		
+
 	}
 	break;
 	case WM_COMMAND:
@@ -226,16 +228,10 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		}
 		break;
 		case ID_IMAGE_BUTTON:
-		{	
-			PAINTSTRUCT ps;
-			HDC hdc = BeginPaint(hwnd, &ps);
-
-			Image image(L"Image/image.png");
-			Gdiplus::Graphics graphics(hdc);
-			graphics.DrawImage(&image, 0, 0);
-
-			//GdiplusShutdown(gdiplusToken);
-			EndPaint(hwnd, &ps);
+		{
+			Gdiplus::Graphics graphics(hwnd);
+			Image image(L"image.png");
+			graphics.DrawImage(&image, rand() % 1920, rand() % 1080, image.GetWidth(), image.GetHeight());
 		}
 		break;
 		case IDM_ABOUT:
