@@ -152,6 +152,7 @@
     <ResourceCompile Include="windowapp.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\image\image.png" />
     <Image Include="small.ico" />
     <Image Include="windowapp.ico" />
   </ItemGroup>

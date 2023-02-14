@@ -19,7 +19,7 @@ ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
-
+void				Initialize();
 //
 //  함수: MyRegisterClass()
 //
@@ -106,8 +106,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	UNREFERENCED_PARAMETER(hPrevInstance);
 	UNREFERENCED_PARAMETER(lpCmdLine);
 
+	Initialize();
 	// TODO: 여기에 코드를 입력합니다.
-
 
 	// 전역 문자열을 초기화합니다.
 	LoadStringW(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
@@ -141,6 +141,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	return (int)msg.wParam;
 }
 
+void Initialize()
+{
+	GdiplusStartupInput gdiplusStartupInput;
+	ULONG_PTR gdiplusToken;
+	GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);
+}
 
 //
 //  함수: WndProc(HWND, UINT, WPARAM, LPARAM)
@@ -159,9 +165,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	static int iCount = 0;
 	GetWidthHeight(hwnd, &iWidth, &iHeight);
 
-	GdiplusStartupInput gdiplusStartupInput;
-	ULONG_PTR gdiplusToken;
-	GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);
 
 	switch (message)
 	{
@@ -223,15 +226,15 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		}
 		break;
 		case ID_IMAGE_BUTTON:
-		{
+		{	
 			PAINTSTRUCT ps;
 			HDC hdc = BeginPaint(hwnd, &ps);
-			
-			Image image(L"image/image.png");
-			Graphics graphics(hdc);
-			graphics.DrawImage(&image, iWidth, iHeight);
 
-			GdiplusShutdown(gdiplusToken);
+			Image image(L"Image/image.png");
+			Gdiplus::Graphics graphics(hdc);
+			graphics.DrawImage(&image, 0, 0);
+
+			//GdiplusShutdown(gdiplusToken);
 			EndPaint(hwnd, &ps);
 		}
 		break;
