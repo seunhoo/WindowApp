@@ -10,9 +10,7 @@ HBRUSH g_hbrBackground = CreateSolidBrush(RGB(255, 255, 0));
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
 WCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입니다.
 WCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
-HWND hwndTextButton;
-HWND hwndBackButton;
-HWND hTextBox;
+
 
 // 이 코드 모듈에 포함된 함수의 선언을 전달합니다:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
@@ -138,12 +136,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
-		else
-		{
-
-		}
 	}
-
 	return (int)msg.wParam;
 }
 
@@ -160,89 +153,59 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
 	//CImage image;
-	static int iWidth = 0, iHeight = 0;
-	static int iCount = 0;
-	GetWidthHeight(hwnd, &iWidth, &iHeight);
-
+	SetWidthHeight(hwnd);
 
 	switch (message)
 	{
+	case WM_KEYDOWN:
+	{
+		KeyMapping(hwnd, wParam);
+	}
+	break;
 	case WM_CREATE:
 	{
-		//이미지를 생성
-
-		//image.Load(_T("./image/image.png"));
-
-		// 타이머 설정 
-		SetTimer(hwnd, 1, 1000, NULL);
-		SetWindowPos(hwnd, HWND_BOTTOM, 0, 0, DEFAULT_X, DEFAULT_Y, SWP_NOZORDER | SWP_NOMOVE);
-
-		// textbox 컨트롤 생성
-		hTextBox = CreateWindowEx(0, _T("EDIT"), _T(""), WS_CHILD | WS_VISIBLE | WS_BORDER, 0, 0, TEXTBOX_X, TEXTBOX_Y, hwnd, (HMENU)ID_TEXTBOX, GetModuleHandle(NULL), NULL);
-		SetWindowPos(hTextBox, HWND_TOP, (iWidth - TEXTBOX_X) / 2, (iHeight - TEXTBOX_Y) / 2 - 50, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
-
-		// 버튼 컨트롤 생성 ( textbox 연계 )
-		hwndTextButton = CreateWindowW(L"BUTTON", L"클릭!", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_TEXT_BUTTON, NULL, NULL);
-		SetWindowPos(hwndTextButton, HWND_TOP, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
-
-		// 버튼 컨트롤 생성 ( 배경 바꾸기 )
-		hwndBackButton = CreateWindowW(L"BUTTON", L"배경바꾸기", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BACK_COLOR_BUTTON, NULL, NULL);
-		SetWindowPos(hwndBackButton, HWND_TOP, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2 + 60, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
-
-		// 버튼 컨트롤 생성 ( 이미지 출력 )
-		hwndBackButton = CreateWindowW(L"BUTTON", L"이미지출력", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_IMAGE_BUTTON, NULL, NULL);
-		SetWindowPos(hwndBackButton, HWND_TOP, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2 + 120, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
-
-		// 이미지 컨트롤 생성 ?
-		
-
+		MakeMainControl(hwnd);
 	}
 	break;
 	case WM_COMMAND:
 	{
 		int wmId = LOWORD(wParam);
 		// 메뉴 선택을 구문 분석합니다:
-
 		switch (wmId)
 		{
 		case ID_TEXT_BUTTON:
 		{
-			int length = GetWindowTextLengthW(hTextBox) + 1;
-			wchar_t* buffer = new wchar_t[length];
-			GetWindowTextW(hTextBox, buffer, length);
-			MessageBoxW(NULL, buffer, L"Entered text", MB_OK);
-			delete[] buffer;
+			GetTextBoxText();
 		}
 		break;
 		case ID_TEXTBOX:
 			break;
 		case ID_BACK_COLOR_BUTTON:
 		{
-			HDC hdc = GetDC(hwnd);
-			HBRUSH hBrush = CreateSolidBrush(RGB(rand() % 256, rand() % 256, rand() % 256));
-			HBRUSH hOldBrush = (HBRUSH)SelectObject(hdc,(HBRUSH)GetStockObject(NULL_BRUSH));
-			RECT rect;
-			GetClientRect(hwnd, &rect);
-			FillRect(hdc, &rect, hBrush);
-			SetBkColor(hdc, RGB(rand() % 256, rand() % 256, rand() % 256));
-			SelectObject(GetDC(hwnd), hOldBrush);
-			DeleteObject(hBrush);
-			ReleaseDC(hwnd, hdc);
+			COLORREF crf = RGB(rand() % 256, rand() % 256, rand() % 256);
+			ChangeBackGroundColor(hwnd,crf);
 		}
 		break;
 		case ID_IMAGE_BUTTON:
 		{
-			Gdiplus::Graphics graphics(hwnd);
-			Image image(L"image.png");
-			graphics.DrawImage(&image, rand() % DEFAULT_X, rand() % DEFAULT_Y,  image.GetWidth(), image.GetHeight());
+			LPCWSTR imageName = L"image.png";
+			
+			int x = rand() % DEFAULT_X;
+			int y = rand() % DEFAULT_Y;
+
+			MakeImage(hwnd, imageName, x, y);
 		}
 		break;
 		case IDM_ABOUT:
+		{
 			DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hwnd, About);
-			break;
+		}
+		break;
 		case IDM_EXIT:
+		{
 			DestroyWindow(hwnd);
-			break;
+		}
+		break;
 		default:
 			return DefWindowProc(hwnd, message, wParam, lParam);
 		}
@@ -257,22 +220,16 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	}
 	case WM_PAINT:
 	{
-		PAINTSTRUCT ps;
-		TEXTMETRIC tm;
-		HDC hdc = BeginPaint(hwnd, &ps);
-		GetTextMetrics(hdc, &tm);
-		//// TODO: 여기에 hdc를 사용하는 그리기 코드를 추가합니다...
-		auto text = _T("안녕하세요!");
-		int x = (iWidth - tm.tmAveCharWidth * _tcslen(text) * 1.7) / 2;
-		int y = (iHeight - tm.tmHeight) / 2 - 70;
-		TextOut(hdc, x, y, text, _tcslen(text));
-		EndPaint(hwnd, &ps);
+		LPCWSTR text = _T("안녕하세요!");
+		int x = 1920 / 2;
+		int y = 1080 / 2 - 120;
+		MakeText(hwnd, text, x, y);
+
 	}
 	break;
 	case WM_CLOSE:
 	{
 		KillTimer(hwnd, 1);
-
 	}
 	break;
 	case WM_DESTROY:

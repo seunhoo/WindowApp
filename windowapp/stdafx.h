@@ -1,4 +1,7 @@
 #pragma once
+#ifndef __STDAFX_H__
+#define __STDAFX_H__
+
 #include "framework.h"
 #include "targetver.h"
 #include "windowapp.h"
@@ -14,7 +17,6 @@ using namespace std;
 using namespace Gdiplus;
 
 
-
 #define DEFAULT_X 1920
 #define DEFAULT_Y 1080
 
@@ -24,4 +26,7 @@ using namespace Gdiplus;
 #define TEXTBOX_X 200
 #define TEXTBOX_Y 25
 
- 
+
+
+#endif // !__STDAFX_H__
+
