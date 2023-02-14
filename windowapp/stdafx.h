@@ -5,8 +5,14 @@
 #include "util.h"
 #include "object.h"
 
-//#include <gdiplus.h>
-//#include <atlimage.h>
+#include <iostream>
+#include <objbase.h>
+#include <gdiplus.h>
+#pragma comment(lib, "gdiplus.lib")
+
+using namespace std;
+using namespace Gdiplus;
+
 
 
 #define DEFAULT_X 1920

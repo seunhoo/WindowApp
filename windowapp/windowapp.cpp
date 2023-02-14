@@ -158,6 +158,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	static int iWidth = 0, iHeight = 0;
 	static int iCount = 0;
 	GetWidthHeight(hwnd, &iWidth, &iHeight);
+
+	GdiplusStartupInput gdiplusStartupInput;
+	ULONG_PTR gdiplusToken;
+	GdiplusStartup(&gdiplusToken, &gdiplusStartupInput, NULL);
+
 	switch (message)
 	{
 	case WM_CREATE:
@@ -219,7 +224,15 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		break;
 		case ID_IMAGE_BUTTON:
 		{
+			PAINTSTRUCT ps;
+			HDC hdc = BeginPaint(hwnd, &ps);
+			
+			Image image(L"image/image.png");
+			Graphics graphics(hdc);
+			graphics.DrawImage(&image, iWidth, iHeight);
 
+			GdiplusShutdown(gdiplusToken);
+			EndPaint(hwnd, &ps);
 		}
 		break;
 		case IDM_ABOUT:
