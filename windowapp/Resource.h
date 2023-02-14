@@ -6,7 +6,7 @@
 
 #define ID_TEXTBOX				9
 #define ID_TEXT_BUTTON				10
-#define ID_BACK_BUTTON				11
+#define ID_BACK_COLOR_BUTTON				11
 #define ID_IMAGE_BUTTON				12
 
 #define IDR_MAINFRAME			128

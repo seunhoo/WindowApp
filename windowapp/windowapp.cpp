@@ -175,23 +175,23 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 		// 타이머 설정 
 		SetTimer(hwnd, 1, 1000, NULL);
-		SetWindowPos(hwnd, NULL, 0, 0, DEFAULT_X, DEFAULT_Y, SWP_NOZORDER | SWP_NOMOVE);
+		SetWindowPos(hwnd, HWND_BOTTOM, 0, 0, DEFAULT_X, DEFAULT_Y, SWP_NOZORDER | SWP_NOMOVE);
 
 		// textbox 컨트롤 생성
 		hTextBox = CreateWindowEx(0, _T("EDIT"), _T(""), WS_CHILD | WS_VISIBLE | WS_BORDER, 0, 0, TEXTBOX_X, TEXTBOX_Y, hwnd, (HMENU)ID_TEXTBOX, GetModuleHandle(NULL), NULL);
-		SetWindowPos(hTextBox, NULL, (iWidth - TEXTBOX_X) / 2, (iHeight - TEXTBOX_Y) / 2 - 50, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+		SetWindowPos(hTextBox, HWND_TOP, (iWidth - TEXTBOX_X) / 2, (iHeight - TEXTBOX_Y) / 2 - 50, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
 
 		// 버튼 컨트롤 생성 ( textbox 연계 )
 		hwndTextButton = CreateWindowW(L"BUTTON", L"클릭!", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_TEXT_BUTTON, NULL, NULL);
-		SetWindowPos(hwndTextButton, NULL, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+		SetWindowPos(hwndTextButton, HWND_TOP, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
 
 		// 버튼 컨트롤 생성 ( 배경 바꾸기 )
-		hwndBackButton = CreateWindowW(L"BUTTON", L"배경바꾸기", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BACK_BUTTON, NULL, NULL);
-		SetWindowPos(hwndBackButton, NULL, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2 + 60, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+		hwndBackButton = CreateWindowW(L"BUTTON", L"배경바꾸기", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_BACK_COLOR_BUTTON, NULL, NULL);
+		SetWindowPos(hwndBackButton, HWND_TOP, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2 + 60, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
 
 		// 버튼 컨트롤 생성 ( 이미지 출력 )
 		hwndBackButton = CreateWindowW(L"BUTTON", L"이미지출력", WS_TABSTOP | WS_VISIBLE | WS_CHILD | BS_DEFPUSHBUTTON, 0, 0, BUTTON_X, BUTTON_Y, hwnd, (HMENU)ID_IMAGE_BUTTON, NULL, NULL);
-		SetWindowPos(hwndBackButton, NULL, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2 + 120, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+		SetWindowPos(hwndBackButton, HWND_TOP, (iWidth - BUTTON_X) / 2, (iHeight - BUTTON_Y) / 2 + 120, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
 
 		// 이미지 컨트롤 생성 ?
 		
@@ -216,22 +216,25 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		break;
 		case ID_TEXTBOX:
 			break;
-		case ID_BACK_BUTTON:
+		case ID_BACK_COLOR_BUTTON:
 		{
+			HDC hdc = GetDC(hwnd);
 			HBRUSH hBrush = CreateSolidBrush(RGB(rand() % 256, rand() % 256, rand() % 256));
-			HBRUSH hOldBrush = (HBRUSH)SelectObject(GetDC(hwnd), hBrush);
+			HBRUSH hOldBrush = (HBRUSH)SelectObject(hdc,(HBRUSH)GetStockObject(NULL_BRUSH));
 			RECT rect;
 			GetClientRect(hwnd, &rect);
-			FillRect(GetDC(hwnd), &rect, hBrush);
+			FillRect(hdc, &rect, hBrush);
+			SetBkColor(hdc, RGB(rand() % 256, rand() % 256, rand() % 256));
 			SelectObject(GetDC(hwnd), hOldBrush);
 			DeleteObject(hBrush);
+			ReleaseDC(hwnd, hdc);
 		}
 		break;
 		case ID_IMAGE_BUTTON:
 		{
 			Gdiplus::Graphics graphics(hwnd);
 			Image image(L"image.png");
-			graphics.DrawImage(&image, rand() % 1920, rand() % 1080, image.GetWidth(), image.GetHeight());
+			graphics.DrawImage(&image, rand() % DEFAULT_X, rand() % DEFAULT_Y,  image.GetWidth(), image.GetHeight());
 		}
 		break;
 		case IDM_ABOUT:
@@ -249,7 +252,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	{
 		HDC hdc = (HDC)wParam;
 		SetTextColor(hdc, RGB(255, 0, 0));
-		SetBkColor(hdc, RGB(255, 255, 0));
+		SetBkColor(hdc, RGB(255, 255, 255));
 		return (LRESULT)g_hbrBackground;
 	}
 	case WM_PAINT:
