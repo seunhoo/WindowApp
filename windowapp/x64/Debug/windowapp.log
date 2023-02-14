@@ -1,3 +1,8 @@
-﻿  windowapp.cpp
-C:\Users\USER\Desktop\vstudio\windowapp\windowapp\windowapp\windowapp.cpp(39,38): warning C4302: '형식 캐스트': 'LPWSTR'에서 'WORD'(으)로 잘립니다.
-  windowapp.vcxproj -> C:\Users\USER\Desktop\vstudio\windowapp\windowapp\x64\Debug\windowapp.exe
+﻿  object.cpp
+C:\Users\USER\Desktop\vstudio\windowapp\windowapp\windowapp\object.cpp : fatal error C1083: 포함 파일을 열 수 없습니다. 'gdiplus.lib': No such file or directory
+  stdafx.cpp
+C:\Users\USER\Desktop\vstudio\windowapp\windowapp\windowapp\stdafx.cpp : fatal error C1083: 포함 파일을 열 수 없습니다. 'gdiplus.lib': No such file or directory
+  util.cpp
+C:\Users\USER\Desktop\vstudio\windowapp\windowapp\windowapp\util.cpp : fatal error C1083: 포함 파일을 열 수 없습니다. 'gdiplus.lib': No such file or directory
+  windowapp.cpp
+C:\Users\USER\Desktop\vstudio\windowapp\windowapp\windowapp\windowapp.cpp : fatal error C1083: 포함 파일을 열 수 없습니다. 'gdiplus.lib': No such file or directory
