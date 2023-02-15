@@ -7,6 +7,8 @@
 const wstring g_szClassName = L"WindowApp";
 HBRUSH g_hbrBackground = CreateSolidBrush(RGB(255, 255, 0));
 
+atomic<int> iClickCount(0);
+
 HINSTANCE hInst;                                // 현재 인스턴스입니다.
 WCHAR szTitle[MAX_LOADSTRING];                  // 제목 표시줄 텍스트입니다.
 WCHAR szWindowClass[MAX_LOADSTRING];            // 기본 창 클래스 이름입니다.
@@ -136,6 +138,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
+		else
+		{
+
+		}
 	}
 	return (int)msg.wParam;
 }
@@ -157,14 +163,14 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 	switch (message)
 	{
-	case WM_KEYDOWN:
-	{
-		KeyMapping(hwnd, wParam);
-	}
-	break;
 	case WM_CREATE:
 	{
 		MakeMainControl(hwnd);
+	}
+	break;
+	case WM_KEYDOWN:
+	{
+		KeyMapping(hwnd, wParam);
 	}
 	break;
 	case WM_COMMAND:
@@ -176,36 +182,45 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 		case ID_TEXT_BUTTON:
 		{
 			GetTextBoxText();
-		}
-		break;
-		case ID_TEXTBOX:
 			break;
+		}
+		case ID_TEXTBOX:
+		{
+			break;
+		}
 		case ID_BACK_COLOR_BUTTON:
 		{
 			COLORREF crf = RGB(rand() % 256, rand() % 256, rand() % 256);
-			ChangeBackGroundColor(hwnd,crf);
+			ChangeBackGroundColor(hwnd, crf);
+			break;
 		}
-		break;
 		case ID_IMAGE_BUTTON:
 		{
 			LPCWSTR imageName = L"image.png";
-			
+
 			int x = rand() % DEFAULT_X;
 			int y = rand() % DEFAULT_Y;
 
 			MakeImage(hwnd, imageName, x, y);
+			break;
 		}
-		break;
+		case ID_CLICK_BUTTON:
+		{
+			iClickCount++;
+			InvalidateRect(hwnd, NULL, TRUE);
+			UpdateWindow(hwnd);
+			break;
+		}
 		case IDM_ABOUT:
 		{
 			DialogBox(hInst, MAKEINTRESOURCE(IDD_ABOUTBOX), hwnd, About);
+			break;
 		}
-		break;
 		case IDM_EXIT:
 		{
 			DestroyWindow(hwnd);
+			break;
 		}
-		break;
 		default:
 			return DefWindowProc(hwnd, message, wParam, lParam);
 		}
@@ -220,11 +235,15 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 	}
 	case WM_PAINT:
 	{
+		int x = 0, y = 0;
 		LPCWSTR text = _T("안녕하세요!");
-		int x = 1920 / 2;
-		int y = 1080 / 2 - 120;
-		MakeText(hwnd, text, x, y);
+		x = DEFAULT_X / 2;y = DEFAULT_Y / 2 - 120;
+		//MakeText(hwnd, text, x, y);
 
+		TCHAR count[256];
+		_stprintf_s(count, _T("Click ! : %d"), iClickCount.load());
+		x = DEFAULT_X / 2 + 60 ;y = DEFAULT_Y / 2 - 160;
+		MakeText(hwnd, count, x, y);
 	}
 	break;
 	case WM_CLOSE:

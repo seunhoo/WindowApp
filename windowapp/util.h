@@ -17,10 +17,7 @@ void ChangeBackGroundColor(HWND hwnd, COLORREF crf);
 void GetTextBoxText();
 
 
-
 static int iWidth = 0, iHeight = 0;
-static int iCount = 0;
-
 
 class util
 {
